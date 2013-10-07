@@ -1,4 +1,3 @@
-
 python-examples
 ===============
 
@@ -6,8 +5,8 @@ Overview
 --------
 
 This repository contains sample code for regular tasks when
-doing simulation in Python. Python is really great as environment 
-for scientific tasks. It allows for rapid prototyping, efficient
+doing simulation in Python. Python is a really great environment 
+for scientific computation. It allows rapid prototyping, efficient
 programming and together with the additional fast typed array handling
 package *numpy* it is also well suited for numerics. 
 
