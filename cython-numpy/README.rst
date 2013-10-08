@@ -8,11 +8,10 @@ to process numpy arrays.
 Usage
 =====
 
-The example iclude both options, either static linkage or dynamic.
+The example include both options, either static linkage or dynamic.
 
 1) Static linkage:
 
-  *
 .. code:: sh
 
     $ python setup-static.py build_ext --inplace 
@@ -21,8 +20,10 @@ The example iclude both options, either static linkage or dynamic.
 
 .. code:: sh
 
-    $ gcc -shared -fpic -i libtest.so test/test.c
+    $ gcc -shared -fpic -o libtest.so test/test.c
     $ LDFLAGS="-Ltest" python setup.py build_ext --inplace
+
+3) Now the library can be called in a *native* way like shown in `main.py`_
 
 Explanation
 ===========
@@ -34,13 +35,11 @@ and processes an output vector of the same type.
 .. include:: test/test.c
     :code: c
 
-.. TODO
-TODO: Explain .pyx concetp ...
-
-Now the library can be called in a *native* way like shown in `main.py`_:
+TODO: More explanation.
 
 .. include:: main.py
     :code: py
+
 
 .. Section links:
 .. _ctypes: http://docs.python.org/library/ctypes.html
